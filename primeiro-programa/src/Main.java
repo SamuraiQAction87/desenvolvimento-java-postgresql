@@ -18,6 +18,12 @@ public class Main {
         // Define a posição (coordenadas) e as dimensões (largura e altura) do componente na janela:
         labelNome.setBounds(20, 20, 50, 20);
 
+        // Criando instancia do objeto campo de texto:
+        JTextField campoTextoNome = new JTextField();
+        // Redimensionando o campo:
+        campoTextoNome.setBounds(20, 40, 200, 20);
+
+
         // Desativando o layout padrão do getContentPane():
         janela.setLayout(null);
         /* getContentPane(): Acessa o painel de conteúdo (content pane) da janela.
@@ -25,6 +31,8 @@ public class Main {
          * Adicionando o label dentro da janela:
          * */
         janela.getContentPane().add(labelNome);
+        // Adicionando o campo de texto ao painel da Janela:
+        janela.getContentPane().add(campoTextoNome);
 
         // Afirmando que a janela será visível:
         janela.setVisible(true);
