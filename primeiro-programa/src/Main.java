@@ -18,8 +18,9 @@ public class Main {
         // Define a posição (coordenadas) e as dimensões (largura e altura) do componente na janela:
         labelNome.setBounds(20, 20, 50, 20);
 
-        /*
-         * getContentPane(): Acessa o painel de conteúdo (content pane) da janela.
+        // Desativando o layout padrão do getContentPane():
+        janela.setLayout(null);
+        /* getContentPane(): Acessa o painel de conteúdo (content pane) da janela.
          * No Java Swing, por padrão, os componentes visuais são inseridos dentro desse painel interno do frame.
          * Adicionando o label dentro da janela:
          * */
