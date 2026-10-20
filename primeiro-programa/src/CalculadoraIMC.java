@@ -1,5 +1,11 @@
 import java.util.Scanner;
-
+/*
+*  Calculadora de IMC:
+*
+*  1º Solicita seu peso atual;
+*  2º Solicita sua altura atual;
+*  3º Calcula e imprime o IMC.
+ * */
 public class CalculadoraIMC {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
