@@ -14,7 +14,7 @@ public class LoopComWhile {
 
         while(valor <= contador) {
             System.out.println(valor);
-            valor = valor + 1;
+            valor++;
         }
     }
 }
