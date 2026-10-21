@@ -15,11 +15,19 @@ public class CalculaIdade {
 
         // 3º Calcula idade atual:
         int idadeAtual = (anoAtual - anoNascimento);
-
-        // 4º Exibição da idade atual:
-        System.out.printf("Sua idade atual é: %d", + idadeAtual);
-
         // Finalizando recurso:
         sc.close();
+
+        // 4º Exibição da idade atual:
+        System.out.printf("Sua idade atual é: %d\n", + idadeAtual);
+
+        // Verificando a faixa etário do usuário:
+        if (idadeAtual < 18) {
+            System.out.println("Você é MENOR DE IDADE!");
+        } else if (idadeAtual < 60) {
+            System.out.println("Você é MAIOR DE IDADE!");
+        } else {
+            System.out.println("Você é IDOSO!");
+        }
     }
 }
