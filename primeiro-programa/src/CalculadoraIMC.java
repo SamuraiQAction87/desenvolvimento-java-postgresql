@@ -1,7 +1,6 @@
 import java.util.Scanner;
-/*
+/**
 *  Calculadora de IMC:
-*
 *  1º Solicita seu peso atual;
 *  2º Solicita sua altura atual;
 *  3º Calcula e imprime o IMC.
@@ -21,7 +20,7 @@ public class CalculadoraIMC {
         // Encerramento do recurso como boa prática de performance:
         sc.close();
 
-        // Calculando e impressão do IMC:
+       // Realiza o cálculo do Índice de Massa Corporal (IMC):
         double resultado = peso / (altura * altura);
         System.out.printf("Seu IMC para o peso atual de %.2f é de %.2f.\n", peso, resultado);
 
