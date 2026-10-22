@@ -3,7 +3,8 @@ import java.util.Scanner;
 * Loop While:
 *
 * Programa que pede um número ao usuário,
-* para ser impresso incrementalmente do 1 até o número informado.
+* verifica se é par ou impar e, se for par, imprime todos os números
+* pares, a partir do 2, até o número digitado pelo usuário.
 * */
 public class LoopComWhile {
     public static void main(String[] args) {
