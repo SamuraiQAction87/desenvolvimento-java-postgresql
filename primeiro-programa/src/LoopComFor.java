@@ -12,7 +12,6 @@ public class LoopComFor {
         int valor = sc.nextInt();
         sc.close();
 
-
         for (int contador = 2 ; contador <= valor ; contador++) {
             if (contador % 2 == 0) {
                 System.out.println(contador);
