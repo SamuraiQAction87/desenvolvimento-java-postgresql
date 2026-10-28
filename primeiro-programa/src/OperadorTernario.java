@@ -13,7 +13,8 @@ public class OperadorTernario {
         int idade = sc.nextInt();
         // If Ternário:
         String mensagem =
-        (idade >= 18) ? "Sim! Você é maior de idade." : "Não! Você é menor de idade";
+        (idade >= 18) ? "Sim! Você é maior de idade." : "Não! Você é menor de idade.";
+        // Imprime a mensagem conforme a idade do usuário:
         System.out.println(mensagem);
     }
 }
