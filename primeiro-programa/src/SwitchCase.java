@@ -48,7 +48,7 @@ public class SwitchCase {
                     System.out.println("Saindo do sistema!");
                     break;
                 default:// Se a opção digitada for inválida, por padrão,
-                    // o usuário receberá esta mensagem:1
+                    // o usuário receberá esta mensagem:
                     System.out.println("Escolha uma opção válida!");
 
             }
