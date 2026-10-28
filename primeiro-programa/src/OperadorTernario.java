@@ -11,7 +11,7 @@ public class OperadorTernario {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite sua idade: ");
         int idade = sc.nextInt();
-        // If Ternário:
+        // If Ternário que armazena a mensagem na variável conforme a idade digitada:
         String mensagem =
         (idade >= 18) ? "Sim! Você é maior de idade." : "Não! Você é menor de idade.";
         // Imprime a mensagem conforme a idade do usuário:
