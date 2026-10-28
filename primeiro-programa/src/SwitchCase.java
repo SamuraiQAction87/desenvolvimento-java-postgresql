@@ -15,6 +15,8 @@ public class SwitchCase {
         Scanner sc = new Scanner(System.in);
         // Variável será inicializada, armazenando o valor que o user entrar:
         int opcao;
+        // Armazena total da conta:
+        double valorTotal = 0;
 
         // Permite o user visualizar e escolher a opção:
         do {
@@ -31,13 +33,16 @@ public class SwitchCase {
             // Verifica qual o valor digitado, para apresentar um case que seja condizente:
             switch (opcao) {
                 case 1:
-                    System.out.println("Sanduíche.");
+                    System.out.println("Sanduíche (R$: 10.00).");
+                    valorTotal += 10;
                     break;
                 case 2:
-                    System.out.println("Pizza.");
+                    System.out.println("Pizza (R$: 30.00).");
+                    valorTotal += 30;
                     break;
                 case 3:
-                    System.out.println("Sorvete.");
+                    System.out.println("Sorvete (R$: 9.00).");
+                    valorTotal += 9;
                     break;
                 case 0:
                     System.out.println("Saindo do sistema!");
@@ -49,6 +54,8 @@ public class SwitchCase {
             }
         // Enquanto o valor digitado for DIFERENTE DE 0, volta para o 'do':
         } while (opcao != 0);
+        // Imprime o total, após o user digitar o 0:
+        System.out.println("Total do pedido R$: " + valorTotal);
         sc.close();
     }
 }
