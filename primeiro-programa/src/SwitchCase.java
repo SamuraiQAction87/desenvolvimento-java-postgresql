@@ -32,19 +32,19 @@ public class SwitchCase {
             opcao = sc.nextInt();
             // Verifica qual o valor digitado, para apresentar um case que seja condizente:
             switch (opcao) {
-                case 1:
+                case 1: // Imprime sanduíche e o valor de R$: 10.00, somando-o ao total:
                     System.out.println("Sanduíche (R$: 10.00).");
                     valorTotal += 10;
                     break;
-                case 2:
+                case 2:  // Imprime pizza e o valor de R$: 30.00, somando-o ao total:
                     System.out.println("Pizza (R$: 30.00).");
                     valorTotal += 30;
                     break;
-                case 3:
+                case 3:  // Imprime sorvete e o valor de R$: 9.00, somando-o ao total:
                     System.out.println("Sorvete (R$: 9.00).");
                     valorTotal += 9;
                     break;
-                case 0:
+                case 0: // Sai do programa e apresenta o total, que está após o 'while':
                     System.out.println("Saindo do sistema!");
                     break;
                 default:// Se a opção digitada for inválida, por padrão,
