@@ -29,7 +29,7 @@ public class InicializarArrays {
             System.out.println(funcoes[i]);
         }
 
-        // Iterando sobre o array funções com o ForEach:
+        // Iterando sobre o array funções com o ForEach (versão aprimorada do 'for'):
         System.out.println("--------------------------------------------------");
         System.out.println("Imprimindo iteração sobre as funções com ForEach: ");
         System.out.println("--------------------------------------------------");
