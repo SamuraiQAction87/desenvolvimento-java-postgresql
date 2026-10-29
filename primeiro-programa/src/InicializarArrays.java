@@ -9,5 +9,8 @@ public class InicializarArrays {
         System.out.println(funcionarios[2]);
         System.out.println(funcionarios[3]);
 
+        // Criando um array vazio:
+        String[] funcoes = new String[4];
+
     }
 }
