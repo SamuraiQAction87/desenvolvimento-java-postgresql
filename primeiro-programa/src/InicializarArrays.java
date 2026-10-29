@@ -6,6 +6,7 @@ public class InicializarArrays {
         // Acessando às posições:
         System.out.println("-------------------------");
         System.out.println("Imprimindo funcionários: ");
+        System.out.println("-------------------------");
         System.out.println(funcionarios[0]);
         System.out.println(funcionarios[1]);
         System.out.println(funcionarios[2]);
@@ -23,8 +24,17 @@ public class InicializarArrays {
         // Iterando sobre o array funções:
         System.out.println("--------------------------------------");
         System.out.println("Imprimindo iteração sobre as funções: ");
+        System.out.println("--------------------------------------");
         for (int i = 0 ; i < funcoes.length ; i++) {
             System.out.println(funcoes[i]);
+        }
+
+        // Iterando sobre o array funções com o ForEach:
+        System.out.println("--------------------------------------------------");
+        System.out.println("Imprimindo iteração sobre as funções com ForEach: ");
+        System.out.println("--------------------------------------------------");
+        for (String funcao : funcoes) {
+            System.out.println(funcao);
         }
     }
 }
