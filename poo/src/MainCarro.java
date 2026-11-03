@@ -24,7 +24,17 @@ public class MainCarro {
         civic.capacidadeTanque = 48;
         civic.combustivel = 15;
 
-        // Verificando a quantidade de combustível:
+        // Verificando a quantidade de combustível antes de abastecer:
+        System.out.println("Combustível antes de abastecer:");
+        System.out.println("Combustível do Punto: " + punto.combustivel);
+        System.out.println("Combustível do Civic: " + civic.combustivel);
+
+        // Abastecendo os objetos:
+        punto.abastecer(20);
+        civic.abastecer(25);
+
+        // Verificando a quantidade de combustível após abastecer:
+        System.out.println("Combustível após abastecer:");
         System.out.println("Combustível do Punto: " + punto.combustivel);
         System.out.println("Combustível do Civic: " + civic.combustivel);
     }
