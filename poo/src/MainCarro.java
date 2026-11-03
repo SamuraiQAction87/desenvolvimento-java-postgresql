@@ -23,6 +23,10 @@ public class MainCarro {
         civic.transmissao = "Automática";
         civic.capacidadeTanque = 48;
         civic.combustivel = 15;
+
+        // Verificando a quantidade de combustível:
+        System.out.println("Combustível do Punto: " + punto.combustivel);
+        System.out.println("Combustível do Civic: " + civic.combustivel);
     }
 }
 
