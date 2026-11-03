@@ -6,9 +6,18 @@ public class Carro {
     String montadora;
     int capacidadeTanque;
     int combustivel;
+    int kmPorLitros;
 
     // Métodos:
+    // Abastece:
     void abastecer(int litros) {
         combustivel = combustivel + litros;
     }
+
+    // Calcula autonomia:
+    int autonomiaCombustivel() {
+        int autonomia = kmPorLitros * combustivel;
+        return autonomia;
+    }
+
 }
