@@ -10,6 +10,8 @@ public class MainCarro {
         punto.cor = "Preta";
         punto.montadora = "Fiat";
         punto.transmissao = "Manual";
+        punto.capacidadeTanque = 50;
+        punto.combustivel = 10;
 
         // Instanciando o 2º objeto:
         Carro civic = new Carro();
@@ -19,6 +21,8 @@ public class MainCarro {
         civic.cor = "Prata";
         civic.montadora = "Honda";
         civic.transmissao = "Automática";
+        civic.capacidadeTanque = 48;
+        civic.combustivel = 15;
     }
 }
 

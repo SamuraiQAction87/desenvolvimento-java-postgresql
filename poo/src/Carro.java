@@ -3,4 +3,6 @@ public class Carro {
     String cor;
     String transmissao;
     String montadora;
+    int capacidadeTanque;
+    int combustivel;
 }
