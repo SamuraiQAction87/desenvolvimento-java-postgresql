@@ -11,7 +11,16 @@ public class Carro {
     // Métodos:
     // Abastece:
     void abastecer(int litros) {
-        combustivel = combustivel + litros;
+        int soma = combustivel + litros;
+        if (soma > capacidadeTanque) {
+            combustivel = capacidadeTanque;
+            // Tratando o combustível restante:
+            int sobra = soma - capacidadeTanque;
+            // Impressão do resultado:
+            System.out.println("Sobrou: " + sobra + " litros.");
+        } else {
+            combustivel = soma;
+        }
     }
 
     // Calcula autonomia:
