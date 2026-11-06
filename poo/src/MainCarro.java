@@ -6,6 +6,7 @@ public class MainCarro {
         Carro punto = new Carro();
 
         // inicializando os atributos do Punto:
+        punto.modelo = "Punto";
         punto.cavalos = 110;
         punto.cor = "Preta";
         punto.montadora = "Fiat";
@@ -18,6 +19,7 @@ public class MainCarro {
         Carro civic = new Carro();
 
         // Inicializando os atributos do Civic:
+        civic.modelo = "Civic";
         civic.cavalos = 150;
         civic.cor = "Prata";
         civic.montadora = "Honda";
@@ -27,20 +29,22 @@ public class MainCarro {
         civic.kmPorLitros = 8;
 
         // Verificando a quantidade de combustível antes de abastecer:
-        System.out.println("============================================");
-        System.out.println("Combustível antes de abastecer:");
-        System.out.println("Combustível do Punto: " + punto.combustivel);
-        System.out.println("Combustível do Civic: " + civic.combustivel);
+        // System.out.println("============================================");
+        // System.out.println("Combustível antes de abastecer:");
+        // System.out.println("Combustível do Punto: " + punto.combustivel);
+        // System.out.println("Combustível do Civic: " + civic.combustivel);
 
         // Abastecendo os objetos:
-        punto.abastecer(20);
-        civic.abastecer(25);
+        System.out.println("============================================");
+        punto.abastecer(48);
+        System.out.println("============================================");
+        civic.abastecer(65);
 
         // Verificando a quantidade de combustível após abastecer:
-        System.out.println("============================================");
-        System.out.println("Combustível após abastecer:");
-        System.out.println("Combustível do Punto: " + punto.combustivel);
-        System.out.println("Combustível do Civic: " + civic.combustivel);
+        // System.out.println("============================================");
+        // System.out.println("Combustível após abastecer:");
+        // System.out.println("Combustível do Punto: " + punto.combustivel);
+        // System.out.println("Combustível do Civic: " + civic.combustivel);
 
         // Verificando autonomia:
         System.out.println("============================================");
