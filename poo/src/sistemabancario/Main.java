@@ -2,19 +2,30 @@ package sistemabancario;
 
 public class Main {
     public static void main(String[] args) {
-        // Instanciando o objeto com base na classe Cliente:
-        Cliente fulano = new Cliente();
 
-        // Chamando os metodos da classe por meio do objeto
-        // para cadastrar o cliente:
+        // Instanciando o objeto 1º Cliente:
+        Cliente fulano = new Cliente();
+        // Inicializando os atributos:
         fulano.nome = "Fulano";
         fulano.cpf = "01234567890";
 
-        // Instanciando uma conta:
+        // Instanciando e cadastrando uma conta para o 1º cliente:
         Conta contaFulano = new Conta();
         contaFulano.titular = fulano;
         contaFulano.numero = 1001;
         contaFulano.saldo = 201;
+
+        // Instanciando o 2º cliente:
+        Cliente cicrano = new Cliente();
+        // Inicializando atributos:
+        cicrano.nome = "Cicrano";
+        cicrano.cpf = "09876543210";
+
+        // Instanciando e cadastrando uma conta para o 2º cliente:
+        Conta contaCicrano = new Conta();
+        contaCicrano.titular = cicrano;
+        contaCicrano.numero = 1002;
+        contaCicrano.saldo = 0;
 
         // Imprime o saldo antes de receber o depósito:
         System.out.println("==========================================");
