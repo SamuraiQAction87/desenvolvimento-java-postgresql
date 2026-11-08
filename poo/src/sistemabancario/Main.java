@@ -16,6 +16,19 @@ public class Main {
         contaFulano.numero = 1001;
         contaFulano.saldo = 201;
 
+        // Imprime o saldo antes de receber o depósito:
+        System.out.println("==========================================");
+        System.out.println("Saldo antes do depósito: " + contaFulano.saldo);
+
+        /*
+         * Instância da classe Banco para acessar aos métodos*/
+        Banco sistemaBancario = new Banco();
+        // Metodo depositar:
+        sistemaBancario.depositar(contaFulano, 100d);
+        // Imprime o saldo após receber o depósito:
+        System.out.println("==========================================");
+        System.out.println("Saldo após o depósito: " + contaFulano.saldo);
+
     }
 }
 
