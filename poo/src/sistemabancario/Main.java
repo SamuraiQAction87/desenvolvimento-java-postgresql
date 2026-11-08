@@ -29,6 +29,12 @@ public class Main {
         System.out.println("==========================================");
         System.out.println("Saldo após o depósito: " + contaFulano.saldo);
 
+        // Testando metodo sacar:
+        System.out.println("==========================================");
+        System.out.println("Testando metodo sacar: $50");
+        sistemaBancario.sacar(contaFulano, 50);
+        contaFulano.imprimirSaldo();
+
     }
 }
 
