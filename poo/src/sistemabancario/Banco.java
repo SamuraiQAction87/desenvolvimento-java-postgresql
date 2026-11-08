@@ -13,11 +13,21 @@ public class Banco {
         conta.saldo = saldoDeposito;
     }
     // Metodo sacar:
-    void sacar(Conta conta, double valor) {
-
+    void sacar(Conta conta, double saque) {
+        // Salva o saldo na variável 'saldoAtual':
+        double saldoAtual = conta.saldo;
+        // Deduz o saque do saldo:
+        double saldoAtualizado = saldoAtual - saque;
+        // Regra de Negócio:
+        // Saque deve ser inferior ao saldo:
+        if (saldoAtualizado < 0) {
+            System.out.println("Saldo insuficiente!");
+        } else {
+            conta.saldo = saldoAtualizado;
+        }
     }
     // Metodo transferir:
-    void transferir(Conta origem, Conta destino, double valor) {
+    void transferir(Conta origem, Conta destino, double valorTransferido) {
 
     }
 
