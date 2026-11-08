@@ -28,7 +28,17 @@ public class Banco {
     }
     // Metodo transferir:
     void transferir(Conta origem, Conta destino, double valorTransferido) {
-
+        double saldoAtualOrigem = origem.saldo;
+        double saldoAtualizadoOrigem = saldoAtualOrigem - valorTransferido;
+        // Regra de Negócio:
+        // Valor transferido deve ser menor que saldo da origem:
+        if (saldoAtualizadoOrigem < 0) {
+            System.out.println("Saldo insuficiente!");
+        } else {
+            origem.saldo = saldoAtualizadoOrigem;
+            double saldoAtualizadoDestino = destino.saldo + valorTransferido;
+            destino.saldo = saldoAtualizadoDestino;
+        }
     }
 
 }
