@@ -31,26 +31,28 @@ public class Main {
         System.out.println("==========================================");
         System.out.println("Saldo antes do depósito: " + contaFulano.saldo);
 
-        /*
-         * Instância da classe Banco para acessar aos métodos*/
+        // Instância da classe Banco para acessar os métodos:
         Banco sistemaBancario = new Banco();
-        // Metodo depositar:
+        // Testando o metodo depositar no 1º cliente:
         sistemaBancario.depositar(contaFulano, 100d);
-        // Imprime o saldo após receber o depósito:
+        // Imprime o saldo após 1º cliente receber o depósito:
         System.out.println("==========================================");
         System.out.println("Saldo após o depósito: " + contaFulano.saldo);
 
-        // Testando metodo sacar:
+        // Testando metodo sacar no 1º cliente:
         System.out.println("==========================================");
         System.out.println("Testando metodo sacar: $50.");
         sistemaBancario.sacar(contaFulano, 50);
         contaFulano.imprimirSaldo();
 
-        // Testa a Regra de Negócio: saque < saldo:
+        // Testa a Regra de Negócio no 1º cliente: SE saldoAtualizado > 0:
         System.out.println("==========================================");
         System.out.println("Testando Regra de Negócio: Sacando $400.");
         sistemaBancario.sacar(contaFulano, 400);
         contaFulano.imprimirSaldo();
+
+        // Testando o metodo "":
+        System.out.println("==========================================");
     }
 }
 
