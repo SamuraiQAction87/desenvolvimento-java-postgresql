@@ -31,10 +31,15 @@ public class Main {
 
         // Testando metodo sacar:
         System.out.println("==========================================");
-        System.out.println("Testando metodo sacar: $50");
+        System.out.println("Testando metodo sacar: $50.");
         sistemaBancario.sacar(contaFulano, 50);
         contaFulano.imprimirSaldo();
 
+        // Testa a Regra de Negócio: saque < saldo:
+        System.out.println("==========================================");
+        System.out.println("Testando Regra de Negócio: Sacando $400.");
+        sistemaBancario.sacar(contaFulano, 400);
+        contaFulano.imprimirSaldo();
     }
 }
 
