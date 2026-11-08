@@ -9,5 +9,23 @@ public class Main {
         // para cadastrar o cliente:
         fulano.nome = "Fulano";
         fulano.cpf = "01234567890";
+
+        // Instanciando uma conta:
+        Conta contaFulano = new Conta();
+        contaFulano.titular = fulano;
+        contaFulano.numero = 1001;
+        contaFulano.saldo = 201;
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
