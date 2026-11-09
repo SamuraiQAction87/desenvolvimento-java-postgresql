@@ -51,8 +51,9 @@ public class Main {
         sistemaBancario.sacar(contaFulano, 400);
         contaFulano.imprimirSaldo();
 
-        // Testando o metodo "":
+        // Testando o metodo "transferir":
         System.out.println("==========================================");
+        System.out.println("Testando o método 'transferir': transferindo $0.");
     }
 }
 
