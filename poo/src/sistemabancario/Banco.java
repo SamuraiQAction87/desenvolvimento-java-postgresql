@@ -8,7 +8,7 @@ public class Banco {
     // Metodo sacar:
     boolean sacar(Conta conta, double saque) {
         // Regra de Negócio: a quantia a ser sacada não pode exceder o saldo disponível:
-        if (saque < conta.saldo) {
+        if (saque > conta.saldo) {
             System.out.println("Saldo insuficiente!");
             return false;
         } else {
