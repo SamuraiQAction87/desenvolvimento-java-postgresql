@@ -8,7 +8,7 @@ public class Conta {
 
     // Metodo que imprime o saldo:
     void imprimirSaldo() {
-        System.out.println("Saldo atual: " + this.saldo);
+        System.out.println("Saldo atual de " + this.titular.nome + ": " + this.saldo);
     }
 
 }
