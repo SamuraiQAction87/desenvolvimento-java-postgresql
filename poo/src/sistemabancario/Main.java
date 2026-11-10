@@ -3,11 +3,11 @@ package sistemabancario;
 public class Main {
     public static void main(String[] args) {
 
-        // Instanciando o objeto 1º Cliente:
-        Cliente fulano = new Cliente();
-        // Inicializando os atributos:
-        fulano.nome = "Fulano";
-        fulano.cpf = "01234567890";
+        // Instanciando o objeto 1º Cliente com construtor canônico:
+        Cliente fulano = new Cliente("Fulano", "01234567890");
+        // Inicializando os atributos (depreciado por uso do construtor canônico):
+        // fulano.nome = "Fulano";
+        // fulano.cpf = "01234567890";
 
         // Instanciando e cadastrando uma conta para o 1º cliente:
         Conta contaFulano = new Conta();
@@ -15,11 +15,11 @@ public class Main {
         contaFulano.numero = 1001;
         contaFulano.saldo = 201;
 
-        // Instanciando o 2º cliente:
-        Cliente cicrano = new Cliente();
-        // Inicializando atributos:
-        cicrano.nome = "Cicrano";
-        cicrano.cpf = "09876543210";
+        // Instanciando o 2º cliente com construtor canônico:
+        Cliente cicrano = new Cliente("Cicrano", "09876543210");
+        // Inicializando atributos (depreciado por uso do construtor canônico):
+        // cicrano.nome = "Cicrano";
+        // cicrano.cpf = "09876543210";
 
         // Instanciando e cadastrando uma conta para o 2º cliente:
         Conta contaCicrano = new Conta();

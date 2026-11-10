@@ -4,7 +4,7 @@ public class Cliente {
     String cpf;
     String nome;
 
-    // Construtor:
+    // Construtor Canônico:
     Cliente(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
