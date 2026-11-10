@@ -53,7 +53,16 @@ public class Main {
 
         // Testando o metodo "transferir":
         System.out.println("==========================================");
-        System.out.println("Testando o método 'transferir': transferindo $0.");
+        System.out.println("Imprimindo saldo antes da transferência:");
+        contaFulano.imprimirSaldo();
+        contaCicrano.imprimirSaldo();
+        System.out.println("Testando o método 'transferir': transferindo $120.");
+        sistemaBancario.transferir(contaFulano, contaCicrano, 120);
+        System.out.println("==========================================");
+        System.out.println("Imprimindo saldo após à transferência:");
+        contaFulano.imprimirSaldo();
+        contaCicrano.imprimirSaldo();
+
     }
 }
 
