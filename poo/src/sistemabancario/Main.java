@@ -14,6 +14,7 @@ public class Main {
         // contaFulano.titular = fulano;
         // contaFulano.numero = 1001;
         // contaFulano.saldo = 201;
+        System.out.println("Saldo da conta de fulano: " + contaFulano.saldo);
 
         // Instanciando o 2º cliente com construtor canônico:
         Cliente cicrano = new Cliente("Cicrano", "09876543210");

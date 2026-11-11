@@ -14,6 +14,8 @@ public class Conta {
         // Regra de Negócio - Atributo 'saldo' só será inicializado se for maior que 0:
         if (saldo > 0) {
             this.saldo = saldo;
+        } else {
+            System.out.println("A conta de " + this.titular.nome + " deve ser criando com saldo positivo!");
         }
     }
 
