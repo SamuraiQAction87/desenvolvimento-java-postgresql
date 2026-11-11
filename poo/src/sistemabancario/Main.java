@@ -10,10 +10,10 @@ public class Main {
         // fulano.cpf = "01234567890";
 
         // Instanciando e cadastrando uma conta para o 1º cliente:
-        Conta contaFulano = new Conta();
-        contaFulano.titular = fulano;
-        contaFulano.numero = 1001;
-        contaFulano.saldo = 201;
+        Conta contaFulano = new Conta(fulano, 1001, 201);
+        // contaFulano.titular = fulano;
+        // contaFulano.numero = 1001;
+        // contaFulano.saldo = 201;
 
         // Instanciando o 2º cliente com construtor canônico:
         Cliente cicrano = new Cliente("Cicrano", "09876543210");
@@ -22,10 +22,10 @@ public class Main {
         // cicrano.cpf = "09876543210";
 
         // Instanciando e cadastrando uma conta para o 2º cliente:
-        Conta contaCicrano = new Conta();
-        contaCicrano.titular = cicrano;
-        contaCicrano.numero = 1002;
-        contaCicrano.saldo = 0;
+        Conta contaCicrano = new Conta(cicrano, 1002, 0);
+        // contaCicrano.titular = cicrano;
+        // contaCicrano.numero = 1002;
+        // contaCicrano.saldo = 0;
 
         // Imprime o saldo antes de receber o depósito:
         System.out.println("==========================================");
