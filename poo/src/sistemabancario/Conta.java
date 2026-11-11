@@ -6,6 +6,15 @@ public class Conta {
     int numero;
     double saldo;
 
+    // Construtor canônico:
+
+    public Conta(Cliente titular, int numero, double saldo) {
+        this.titular = titular;
+        this.numero = numero;
+        this.saldo = saldo;
+    }
+
+
     // Metodo que imprime o saldo:
     /**
      * Como o atributo 'titular' é do tipo de referência 'Cliente', que por sua vez
