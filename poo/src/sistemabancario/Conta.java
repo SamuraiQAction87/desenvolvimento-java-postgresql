@@ -11,7 +11,10 @@ public class Conta {
     public Conta(Cliente titular, int numero, double saldo) {
         this.titular = titular;
         this.numero = numero;
-        this.saldo = saldo;
+        // Regra de Negócio - Atributo 'saldo' só será inicializado se for maior que 0:
+        if (saldo > 0) {
+            this.saldo = saldo;
+        }
     }
 
 
