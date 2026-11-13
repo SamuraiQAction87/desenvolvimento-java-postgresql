@@ -19,7 +19,30 @@ public class Conta {
         }
     }
 
+    // Getters e Setters:
+    public Cliente getTitular() {
+        return titular;
+    }
 
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
     // Metodo que imprime o saldo:
     /**
      * Como o atributo 'titular' é do tipo de referência 'Cliente', que por sua vez
