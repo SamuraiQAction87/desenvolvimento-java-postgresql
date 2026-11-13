@@ -9,7 +9,7 @@ public class Main {
         // Instanciando e cadastrando uma conta para o 1º cliente:
         Conta contaFulano = new Conta(fulano, 1001, 201);
 
-        System.out.println("Saldo da conta de fulano: " + contaFulano.saldo);
+        System.out.println("Saldo da conta de fulano: " + contaFulano.getSaldo());
 
         // Instanciando o 2º cliente com construtor canônico:
         Cliente cicrano = new Cliente("Cicrano", "09876543210");
@@ -21,7 +21,7 @@ public class Main {
 
         // Imprime o saldo antes de receber o depósito:
         System.out.println("==========================================");
-        System.out.println("Saldo antes do depósito: " + contaFulano.saldo);
+        System.out.println("Saldo antes do depósito: " + contaFulano.getSaldo());
 
         // Instância da classe Banco para acessar os métodos:
         Banco sistemaBancario = new Banco();
@@ -29,7 +29,7 @@ public class Main {
         sistemaBancario.depositar(contaFulano, 100d);
         // Imprime o saldo após 1º cliente receber o depósito:
         System.out.println("==========================================");
-        System.out.println("Saldo após o depósito: " + contaFulano.saldo);
+        System.out.println("Saldo após o depósito: " + contaFulano.getSaldo());
 
         // Testando metodo sacar no 1º cliente:
         System.out.println("==========================================");
