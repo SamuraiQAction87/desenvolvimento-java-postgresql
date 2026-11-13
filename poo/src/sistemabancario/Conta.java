@@ -2,9 +2,9 @@ package sistemabancario;
 
 public class Conta {
     // Atributos da conta:
-    Cliente titular;
-    int numero;
-    double saldo;
+    private Cliente titular;
+    private int numero;
+    private double saldo;
 
     // Construtor canônico:
 

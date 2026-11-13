@@ -1,8 +1,8 @@
 package sistemabancario;
 
 public class Cliente {
-    String cpf;
-    String nome;
+    private String cpf;
+    private String nome;
 
     // Construtor Padrão:
     Cliente() {

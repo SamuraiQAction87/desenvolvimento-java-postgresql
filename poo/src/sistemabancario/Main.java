@@ -5,28 +5,19 @@ public class Main {
 
         // Instanciando o objeto 1º Cliente com construtor canônico:
         Cliente fulano = new Cliente("Fulano", "01234567890");
-        // Inicializando os atributos (depreciado por uso do construtor canônico):
-        // fulano.nome = "Fulano";
-        // fulano.cpf = "01234567890";
 
         // Instanciando e cadastrando uma conta para o 1º cliente:
         Conta contaFulano = new Conta(fulano, 1001, 201);
-        // contaFulano.titular = fulano;
-        // contaFulano.numero = 1001;
-        // contaFulano.saldo = 201;
+
         System.out.println("Saldo da conta de fulano: " + contaFulano.saldo);
 
         // Instanciando o 2º cliente com construtor canônico:
         Cliente cicrano = new Cliente("Cicrano", "09876543210");
-        // Inicializando atributos (depreciado por uso do construtor canônico):
-        // cicrano.nome = "Cicrano";
-        // cicrano.cpf = "09876543210";
+
 
         // Instanciando e cadastrando uma conta para o 2º cliente:
-        Conta contaCicrano = new Conta(cicrano, 1002, 0);
-        // contaCicrano.titular = cicrano;
-        // contaCicrano.numero = 1002;
-        // contaCicrano.saldo = 0;
+        Conta contaCicrano = new Conta(cicrano, 1002, 50);
+
 
         // Imprime o saldo antes de receber o depósito:
         System.out.println("==========================================");
