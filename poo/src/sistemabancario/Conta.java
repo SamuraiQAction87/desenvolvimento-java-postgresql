@@ -15,7 +15,7 @@ public class Conta {
         if (saldo > 0) {
             this.saldo = saldo;
         } else {
-            System.out.println("A conta de " + this.titular.nome + " deve ser criando com saldo positivo!");
+            System.out.println("A conta de " + this.titular.getNome() + " deve ser criando com saldo positivo!");
         }
     }
 
@@ -50,7 +50,7 @@ public class Conta {
      * em vez do nome do cliente, viria o padrão nativo: o nome da classe seguido
      * do endereço de memória em hexadecimal (sistemabancario.Cliente@6e8cf4c6 */
     void imprimirSaldo() {
-        System.out.println("Saldo atual de " + this.titular.nome + ": " + this.saldo);
+        System.out.println("Saldo atual de " + this.titular.getNome() + ": " + this.getSaldo());
     }
 
 }
