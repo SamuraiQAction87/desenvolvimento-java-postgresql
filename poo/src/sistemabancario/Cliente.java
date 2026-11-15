@@ -9,13 +9,14 @@ public class Cliente {
 
     // Construtor Padrão:
     Cliente() {
-
+        incrementarClientes();
     }
 
     // Construtor Canônico:
-    Cliente(String nome, String cpf) {
+    public Cliente(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
+        incrementarClientes();
     }
 
     //Getters e Setters:
@@ -33,5 +34,11 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    // Metodo static que conta clientes:
+    public static void incrementarClientes() {
+        // Chamando o atributo de classe e incrementando +1:
+        Cliente.quantidadeClientes++;
     }
 }
