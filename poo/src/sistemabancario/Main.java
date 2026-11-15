@@ -5,8 +5,6 @@ public class Main {
 
         // Instanciando o objeto 1º Cliente com construtor canônico:
         Cliente fulano = new Cliente("Fulano", "01234567890");
-        // Chamando o atributo que conta cliente, a partir da classe 'Cliente':
-        Cliente.quantidadeClientes = 1;
 
         // Instanciando e cadastrando uma conta para o 1º cliente:
         Conta contaFulano = new Conta(fulano, 1001, 201);
@@ -56,6 +54,10 @@ public class Main {
         System.out.println("Imprimindo saldo após à transferência:");
         contaFulano.imprimirSaldo();
         contaCicrano.imprimirSaldo();
+
+        // Imprimindo quantidade de clientes:
+        System.out.println("==========================================");
+        System.out.println("Quantidade clientes: " + Cliente.quantidadeClientes);
 
     }
 }
