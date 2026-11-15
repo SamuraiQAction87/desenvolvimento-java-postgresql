@@ -1,6 +1,9 @@
 package sistemabancario;
 
 public class Cliente {
+    // Atributo da classe:
+    public static int quantidadeClientes;
+
     private String cpf;
     private String nome;
 
@@ -16,7 +19,6 @@ public class Cliente {
     }
 
     //Getters e Setters:
-
     public String getCpf() {
         return cpf;
     }
