@@ -1,4 +1,4 @@
-package sistemabancario;
+package br.com.qaction.sistemabancario;
 
 public class Banco {
     // Metodo depositar:

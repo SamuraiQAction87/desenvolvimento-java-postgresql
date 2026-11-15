@@ -1,4 +1,4 @@
-package sistemabancario;
+package br.com.qaction.sistemabancario;
 
 public class Main {
     public static void main(String[] args) {

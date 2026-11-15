@@ -1,4 +1,4 @@
-package sistemabancario;
+package br.com.qaction.sistemabancario;
 
 public class Cliente {
     // Atributo da classe:
