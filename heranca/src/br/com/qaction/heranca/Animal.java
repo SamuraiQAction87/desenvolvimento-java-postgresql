@@ -34,4 +34,9 @@ public class Animal {
     public void dormir() {
         System.out.println("Dormindo...");
     }
+
+    public void imprimirDados() {
+        System.out.println("O nome do Panda é: " + this.getNome());
+        System.out.println("A idade do Panda é: " + this.getIdade());
+    }
 }
