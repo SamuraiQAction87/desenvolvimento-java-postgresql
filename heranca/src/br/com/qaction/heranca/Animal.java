@@ -6,6 +6,13 @@ public class Animal {
     private int idade;
     private String especie;
 
+    // Construtor canônico:
+    public Animal(String nome, int idade, String especie) {
+        this.nome = nome;
+        this.idade = idade;
+        this.especie = especie;
+    }
+
     // Getters && Setters:
     public String getNome() {
         return nome;
@@ -44,7 +51,7 @@ public class Animal {
         System.out.println("Dormindo...");
     }
 
-    public void imprimirDados() {
+    protected void imprimirDados() {
         System.out.println("O nome do animal " + this.getEspecie() + " é: " + this.getNome());
         System.out.println("A idade de " + this.getNome() + " é: " + this.getIdade());
     }
