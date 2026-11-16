@@ -11,6 +11,7 @@ public class Animal {
         this.nome = nome;
         this.idade = idade;
         this.especie = especie;
+        imprimirDados();
     }
 
     // Getters && Setters:
