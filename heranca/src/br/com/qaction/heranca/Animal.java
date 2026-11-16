@@ -1,6 +1,7 @@
 package br.com.qaction.heranca;
 
 public class Animal {
+    // Atributos encapsulados:
     private String nome;
     private int idade;
 
