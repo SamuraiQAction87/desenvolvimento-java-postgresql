@@ -4,6 +4,7 @@ public class Animal {
     // Atributos encapsulados:
     private String nome;
     private int idade;
+    private String especie;
 
     // Getters && Setters:
     public String getNome() {
@@ -22,6 +23,14 @@ public class Animal {
         this.idade = idade;
     }
 
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
     // Metodos comuns:
     public void andar() {
         System.out.println("Andando...");
@@ -36,7 +45,7 @@ public class Animal {
     }
 
     public void imprimirDados() {
-        System.out.println("O nome do Panda é: " + this.getNome());
-        System.out.println("A idade do Panda é: " + this.getIdade());
+        System.out.println("O nome do animal " + this.getEspecie() + " é: " + this.getNome());
+        System.out.println("A idade de " + this.getNome() + " é: " + this.getIdade());
     }
 }
