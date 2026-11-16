@@ -5,6 +5,15 @@ public class Panda extends Animal {
     private String cor;
     private String corSecundaria;
 
+    // Construtor:
+    public Panda(String nome, int idade, String especie, String cor, String corSecundaria) {
+        // Chamando o construtor da super classe:
+        super(nome, idade, especie);
+        // Atributos da instância:
+        this.cor = cor;
+        this.corSecundaria = corSecundaria;
+    }
+
     //Metodos específicos:
     public void subirArvore() {
         System.out.println("Subindo...");
