@@ -1,6 +1,6 @@
 package br.com.qaction.heranca;
 
-public class Hipopotamo {
+public class Hipopotamo extends Animal {
     // Atributos encapsulados:
     private int forcaMordida;
 
