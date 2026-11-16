@@ -5,6 +5,11 @@ public class Panda extends Animal {
     private String cor;
     private String corSecundaria;
 
+    //Metodos específicos:
+    public void subirArvore() {
+        System.out.println("Subindo...");
+    }
+
     // Getters && Setters:
     public String getCor() {
         return cor;
