@@ -20,4 +20,17 @@ public class Animal {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    // Metodos comuns:
+    public void andar() {
+        System.out.println("Andando...");
+    }
+
+    public void comer() {
+        System.out.println("Comendo...");
+    }
+
+    public void dormir() {
+        System.out.println("Dormindo...");
+    }
 }
