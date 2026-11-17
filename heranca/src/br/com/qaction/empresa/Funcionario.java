@@ -10,6 +10,11 @@ public class Funcionario {
         return (salario / 10) + 50;
     }
 
+    // Imprime o salário já com a bonificação:
+    public void imprimirRemuneracao() {
+        double remuneracao = salario + this.calcularBonificacao();
+    }
+
     // Getters e Setters:
     public String getNome() {
         return nome;
