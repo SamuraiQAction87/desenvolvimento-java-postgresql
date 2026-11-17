@@ -13,6 +13,7 @@ public class Funcionario {
     // Imprime o salário já com a bonificação:
     public void imprimirRemuneracao() {
         double remuneracao = salario + this.calcularBonificacao();
+        System.out.println("A remuneração do funcionário " + nome + " é: " + remuneracao);
     }
 
     // Getters e Setters:
