@@ -16,7 +16,7 @@ public class Tecnico extends Funcionario {
     /**
     * Implementação do 'abstract method' 'calcularBonificacaoAnual()' da SuperClasse
     * 'Funcionario':
-    * */
+     * */
     @Override
     public double calcularBonificacaoAnual() {
         return super.getSalario() * 2;
