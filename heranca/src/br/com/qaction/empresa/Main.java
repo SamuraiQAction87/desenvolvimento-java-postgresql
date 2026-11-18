@@ -12,6 +12,7 @@ public class Main {
         // Output do financeiro do Fulano:
         System.out.println("=======================================");
         System.out.println("Remuneração do Fulano: ");
+        // Metodo com retorno 'void' não poder estar contido em 'println':
         tecnico.imprimirRemuneracao();
         System.out.println("Bonus anual do Fulano: " + tecnico.calcularBonificacaoAnual());
 
@@ -25,6 +26,7 @@ public class Main {
         // Output do financeiro do Gerente01:
         System.out.println("=======================================");
         System.out.println("Remuneração do Gerente01: ");
+        // Metodo com retorno 'void' não poder estar contido em 'println':
         gerente.imprimirRemuneracao();
         System.out.println("Bonus anual do Gerente01: " + gerente.calcularBonificacaoAnual());
     }
