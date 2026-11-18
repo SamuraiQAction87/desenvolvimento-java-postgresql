@@ -5,6 +5,9 @@ public abstract class Funcionario {
     private String cpf;
     private double salario;
 
+    // Metodo abstrato que calcula a bonificação Anual:
+    public abstract double calcularBonificacaoAnual();
+
     // Metodo que calcula a bonificação:
     public double calcularBonificacao() {
         return (salario / 10) + 50;
